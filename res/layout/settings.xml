@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/tvGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="100" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Gray Threshold"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sbGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="127"
+            android:progress="50" />
+
+        <RelativeLayout
+            android:id="@+id/rela2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/tvColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="50" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Color Threshold"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sbColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="127"
+            android:progress="50" />
+
+        <RelativeLayout
+            android:id="@+id/rela3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/tvMinOM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="500" />
+
+            <TextView
+                android:id="@+id/tvSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Minimum Object Mass"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sbMinOM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="25000"
+            android:progress="5000" />
+
+        <RelativeLayout
+            android:id="@+id/rela4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/tvMaxOM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="50000" />
+
+            <TextView
+                android:id="@+id/txSpeedUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Maximum Object Mass"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sbMaxOM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="50000"
+            android:progress="25000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/tvMinSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Minimum Speed"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sbMinSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="500"
+            android:progress="10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/tvMaxSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="75" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Maximum Speed"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sbMaxSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="500"
+            android:progress="75" />
+    </LinearLayout>
+
+</ScrollView>
